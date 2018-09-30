@@ -1,0 +1,460 @@
+a, ul, ol, li, col, row {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: unset;
+    text-decoration: none;
+    vertical-align: baseline;
+    color: rgba(0, 0, 0, 0.37);
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background: url("../images/concrete_seamless.png");
+}
+
+#header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-color: #fff8f8f6;
+    border-width: 0px 0px 1px 0px;
+    border-bottom-style: outset;
+    height: 74px;
+    margin-bottom: 30px;
+}
+
+.nav-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#name {
+    padding: 12px 30px 12px 30px;
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#about {
+    color: #777777;
+    float: right;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0px 20px 0px 20px;
+    border-width: 0px;
+    /*     border-right-width: 1px; */
+    border-style: outset;
+    margin-top: 12px;
+    transition: all 0.3s;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#portfolio {
+    color: #777777;
+    float: right;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0px 20px 0px 20px;
+    border-width: 0px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-style: outset;
+    margin-top: 12px;
+    transition: all 0.3s;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#contact {
+    color: #777777;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0px 20px 0px 20px;
+    border-width: 0px;
+    /*     border-left-width: 1px; */
+    border-style: outset;
+    margin-top: 12px;
+    transition: all 0.3s;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#about:hover, #portfolio:hover, #contact:hover {
+    border-style: groove;
+    font-size: 30px;
+    background-color: #ffffff;
+    color: #404040;
+}
+
+.article-holder {
+    position: relative;
+    top: 104px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-color: #fff8f8f6;
+    border-width: 1px;
+    border-style: groove;
+    height: 1150px;
+    margin-bottom: 100px;
+}
+
+.article-header {
+    padding: 30px 0px 29px 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color: #4aaaa5;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-style: groove;
+    border-width: 0px 0px 1px 0px;
+    border-color: #fff8f8f6;
+}
+
+.portfolio-1, .portfolio-2, .portfolio-3, .portfolio-4, .portfolio-5 {
+    position: relative;
+    padding: 0px 30px 30px 30px;
+    float: left;
+}
+
+.detail-portfolio-1, .detail-portfolio-2, .detail-portfolio-3, .detail-portfolio-4, .detail-portfolio-5 {
+    position: absolute;
+    width: 300px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background-color: #4aaaa5;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.detail-portfolio-1:hover, .detail-portfolio-2:hover, .detail-portfolio-3:hover, .detail-portfolio-4:hover, .detail-portfolio-5:hover {
+    opacity: .9;
+    font-size: 28px;
+    width: 350px;
+}
+
+article {
+    margin: 0px 0px 100px 0px;
+}
+
+#footer1 {
+    color: white;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin-top: 20px;
+    background-color: #666666;
+    text-align: center;
+    line-height: 75px;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        margin: 0;
+    }
+    #name {
+        font-size: 35px;
+        text-align: center;
+    }
+    #header {
+        width: 100%;
+        height: 74px;
+        margin-bottom: 0px;
+    }
+    .nav-container {
+        width: auto;
+        margin: 0 5%;
+    }
+    article {
+        margin: 0px 0px 0px 0px;
+    }
+    .article-holder {
+        top: 0px;
+        /*         margin: 12% 5%;
+        width: 704px; */
+        margin: 12% 5%;
+        width: 620px;
+        margin-bottom: 100px;
+        height: 1130px;
+    }
+    #about {
+        font-size: 20px;
+    }
+    #portfolio {
+        font-size: 30px;
+        padding-right: 2%;
+        padding-left: 2%;
+        color: #404040;
+    }
+    #contact {
+        font-size: 20px;
+        padding-right: 0%;
+    }
+    #about:hover, #portfolio:hover, #contact:hover {
+        border-style: groove;
+        font-size: 30px;
+        background-color: #ffffff;
+        color: #404040;
+    }
+    #input-message {
+        height: 200px;
+    }
+    .detail-portfolio-1, .detail-portfolio-2, .detail-portfolio-3, .detail-portfolio-4, .detail-portfolio-5 {
+        width: 250px;
+        font-size: 20px;
+    }
+    .image-portfolio-1, .image-portfolio-2, .image-portfolio-3, .image-portfolio-4, .image-portfolio-5 {
+        /*         height: 292px;
+        width: 292px; */
+        height: 250px;
+        width: 250px;
+    }
+    #footer1 {
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    #name {
+        font-size: 35px;
+        text-align: center;
+    }
+    #header {
+        width: 100%;
+        height: 74px;
+        margin-bottom: 0px;
+    }
+    .nav-container {
+        width: auto;
+        margin: 0 3%;
+    }
+    article {
+        margin: 0px 0px 0px 0px;
+    }
+    .article-holder {
+        top: 0px;
+        margin: 16% 3%;
+        width: 94%;
+        margin-bottom: 100px;
+        height: 1130px;
+    }
+    #about {
+        font-size: 20px;
+    }
+    #portfolio {
+        font-size: 30px;
+        padding-right: 2%;
+        padding-left: 2%;
+        color: #404040;
+    }
+    #contact {
+        font-size: 20px;
+        padding-right: 0%;
+    }
+    #about:hover, #portfolio:hover, #contact:hover {
+        border-style: groove;
+        font-size: 30px;
+        background-color: #ffffff;
+        color: #404040;
+    }
+    .portfolio-1 {
+        float: left;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .portfolio-2 {
+        float: right;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .portfolio-3 {
+        float: left;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .portfolio-4 {
+        float: right;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .portfolio-5 {
+        float: left;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .detail-portfolio-1, .detail-portfolio-3, .detail-portfolio-5 {
+        position: absolute;
+        width: 90%;
+        top: 75%;
+        left: 55%;
+        transform: translate(-50%, -75%);
+        background-color: #4aaaa5;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 21px;
+        font-weight: bold;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+    .detail-portfolio-2, .detail-portfolio-4 {
+        position: absolute;
+        width: 90%;
+        top: 75%;
+        left: 45%;
+        transform: translate(-50%, -75%);
+        background-color: #4aaaa5;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 21px;
+        font-weight: bold;
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+    .image-portfolio-1, .image-portfolio-2, .image-portfolio-3, .image-portfolio-4, .image-portfolio-5 {
+        height: 255px;
+        width: 255px;
+    }
+    #footer1 {
+        line-height: 70px;
+    }
+    @media screen and (max-width: 640px) {
+        body {
+            margin: 0;
+        }
+        #name {
+            width: 100%;
+            font-size: 35px;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+        #header {
+            width: 100%;
+            position: static;
+            height: 148px;
+            margin-bottom: 0px;
+        }
+        .nav-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        article {
+            margin: 0px 0px 0px 0px;
+        }
+        .article-holder {
+            top: 15px;
+            margin: 0% 5%;
+            width: 90%;
+            margin-bottom: 100px;
+            height: 2850px;
+        }
+        #about {
+            font-size: 25px;
+            text-align: right;
+            width: auto;
+            padding-right: 3%;
+            padding-left: 3%;
+        }
+        #portfolio {
+            font-size: 30px;
+            text-align: center;
+            width: 30%;
+            padding-right: 2%;
+            padding-left: 2%;
+            color: #404040;
+        }
+        #contact {
+            font-size: 25px;
+            text-align: left;
+            width: 22%;
+            padding-left: 3%;
+            padding-right: 8%;
+        }
+        #about:hover, #contact:hover {
+            border-style: groove;
+            font-size: 30px;
+            background-color: #ffffff;
+            color: #404040;
+        }
+        .detail-portfolio-1, .detail-portfolio-2, .detail-portfolio-3, .detail-portfolio-4, .detail-portfolio-5 {
+            position: absolute;
+            width: 89%;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            background-color: #4aaaa5;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 0.8;
+            transition: all 0.5s;
+        }
+        .image-portfolio-1, .image-portfolio-4 {
+            height: 100%;
+            width: 100%;
+        }
+        .image-portfolio-2, .image-portfolio-3, .image-portfolio-5 {
+            height: 100%;
+            width: 100%;
+        }
+        .portfolio-1, .portfolio-2, .portfolio-3, .portfolio-4, .portfolio-5 {
+            position: relative;
+            padding: 0px 30px 30px 30px;
+            float: left;
+        }
+        .detail-portfolio-1:hover, .detail-portfolio-2:hover, .detail-portfolio-3:hover, .detail-portfolio-4:hover, .detail-portfolio-5:hover {
+            opacity: .9;
+            font-size: 35px;
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+        }
+        #footer1 {
+            line-height: 70px;
+        }
+    }
